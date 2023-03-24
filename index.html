@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate the midpoint of two points with our handy tool.">
+  <title>Midpoint Calculator</title>
+  <link rel="icon" type="image/png" href="/fav_index/pink-flowers.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Midpoint Calculator</h1>
+    <img src="/images/pink-calculator.png" alt="Calculator icon">
+  </header>
+  <main>
+    <p class="intro">Enter the coordinates of two points to calculate their midpoint:</p>
+    <form>
+      <div class="point">
+        <label for="x1">Point 1:</label>
+        <input type="number" id="x1" name="x1" step="0.01" required>
+        <label for="y1">, </label>
+        <input type="number" id="y1" name="y1" step="0.01" required>
+      </div>
+      <div class="point">
+        <label for="x2">Point 2:</label>
+        <input type="number" id="x2" name="x2" step="0.01" required>
+        <label for="y2">, </label>
+        <input type="number" id="y2" name="y2" step="0.01" required>
+      </div>
+      <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Calculate Midpoint
+      </button>
+    </form>
+    <p id="result"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
